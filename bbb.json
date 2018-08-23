@@ -1,0 +1,69 @@
+{
+  "front-version": "2.19.0",
+  "version": 3,
+  "nodes": [
+    {
+      "type": "Project",
+      "id": "1eafd40a-3146-4721-86b1-770564398c45",
+      "lastModified": "2018-08-18T16:12:56.978+08:00",
+      "name": "TEST"
+    },
+    {
+      "type": "Request",
+      "method": {
+        "link": "http://tools.ietf.org/html/rfc7231#section-4.3.1",
+        "name": "GET"
+      },
+      "headersType": "Form",
+      "uri": {
+        "query": {
+          "delimiter": "&",
+          "items": [
+            {
+              "enabled": true,
+              "name": "tmd",
+              "value": "07242018"
+            }
+          ]
+        },
+        "scheme": {
+          "secure": true,
+          "name": "https",
+          "version": "V11"
+        },
+        "host": "testpool.yhlsoft.com",
+        "path": "/crm/assets/user/profile/sms_check.js"
+      },
+      "id": "1bd9b574-10e8-453e-aae4-52fb01166068",
+      "lastModified": "2018-08-18T16:12:56.978+08:00",
+      "name": "GET https://testpool.yhlsoft.com/crm/assets/user/profile/sms_check.js?tmd=07242018",
+      "headers": [
+        {
+          "enabled": true,
+          "name": "accept-encoding",
+          "value": "gzip, deflate, br"
+        },
+        {
+          "enabled": true,
+          "name": "accept-language",
+          "value": "zh-CN,zh;q=0.9,en;q=0.8"
+        },
+        {
+          "enabled": true,
+          "name": "user-agent",
+          "value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36"
+        }
+      ],
+      "assertions": [
+        {
+          "comparison": "Equals",
+          "subject": "ResponseStatus",
+          "path": "code",
+          "value": "200"
+        }
+      ],
+      "metaInfo": {},
+      "parentId": "1eafd40a-3146-4721-86b1-770564398c45"
+    }
+  ]
+}
