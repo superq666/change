@@ -20,8 +20,8 @@ function changeJson(newhost, newcookie){
         console.log(json.nodes[1].headers[7].value);
 
 
-        getcookies = get("console.log(json.nodes[1].headers[7].value");
-        console.log(getcookies.value);
+        getcookies = json.nodes[1].headers[7].value;
+        console.log("最终得到的cookies的值是"+getcookies);
 
         //对四个不需要的数据进行删除操作；
         for(let i=10;i>-1;i--){
@@ -44,10 +44,10 @@ function changeJson(newhost, newcookie){
             console.log('--------------修改成功---------------');
             console.log(json);
         })
-        // return cookies;
+        return getcookies;
     })
 }
-changeJson('www.baidu.com', 'www.google.com');//执行一下;
+changeJson('www.baidu.com','asdjasfjsahfkshjdhfjsad' );//执行一下;
 
 
 
